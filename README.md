@@ -1,4 +1,4 @@
-# prisma-echo-api
+# echo-prisma-api
 
 Sample API using Echo (Go) and Prisma (with Postgres).
 

@@ -4,7 +4,7 @@ import (
 	"context"
 	"net/http"
 
-	prisma "github.com/craicoverflow/prisma-echo-api/generated/prisma-client"
+	prisma "github.com/craicoverflow/echo-prisma-api/generated/prisma-client"
 	"github.com/labstack/echo"
 )
 
@@ -29,7 +29,7 @@ func createUser(c echo.Context) error {
 
 	name := "Enda"
 	newUser, err := client.CreateUser(prisma.UserCreateInput{
-		Name:  name,
+		Name: name,
 	}).Exec(ctx)
 
 	if err != nil {
